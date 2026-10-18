@@ -1,0 +1,15 @@
+digraph ProcesoOffline {
+  rankdir=TB; graph [label="Proceso crítico: registro offline y sincronización", labelloc=t, fontsize=18];
+  node [shape=box, style="rounded,filled", fillcolor="#eef5ff", color="#315b86", fontname="Arial"];
+  inicio [label="Inicio: operador registra movimiento"];
+  conexion [label="¿Hay conexión?", shape=diamond, fillcolor="#fff2cc"];
+  online [label="Validar y guardar en servidor"];
+  offline [label="Guardar localmente con ID único\ny estado pendiente"];
+  recon [label="Se recupera la conexión"];
+  sync [label="Enviar operaciones pendientes"];
+  valid [label="Validar ID e integridad\ny resolver conflictos"];
+  confirmar [label="Confirmar sincronización\ny marcar como enviada"];
+  fin [label="Fin: datos consistentes"];
+  inicio -> conexion; conexion -> online [label="Sí"]; conexion -> offline [label="No"];
+  offline -> recon -> sync -> valid -> confirmar -> fin; online -> fin;
+}
