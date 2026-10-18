@@ -1,0 +1,17 @@
+ID,Requisito,Tipo,Criterio de aceptación,Evidencia sugerida,Estado de verificación
+RF-01,Autenticación de usuarios,Funcional,Acceso solo con credenciales válidas,Caso de prueba CP-01,Documental
+RF-02,Roles y permisos,Funcional,Operaciones restringidas según rol,CP-02 y matriz de permisos,Documental
+RF-03,Registro de lotes,Funcional,Código único y campos obligatorios validados,CP-03,Documental
+RF-04,Actualizar estado y ubicación,Funcional,Cambio registra fecha y usuario,CP-04,Documental
+RF-05,Historial de trazabilidad,Funcional,Mostrar eventos asociados al lote,CP-05,Documental
+RF-06,Movimientos de almacén,Funcional,Entradas/salidas/ajustes actualizan stock,CP-06,Documental
+RF-07,Consulta de stock,Funcional,Consulta por lote y ubicación,CP-07,Documental
+RF-08,Asignación a pedidos,Funcional,Asignar solo lotes disponibles y suficientes,CP-08,Documental
+RF-09,Alertas de stock y discrepancias,Funcional,Alerta ante condición definida,CP-09,Documental
+RF-10,Reportes operativos,Funcional,Reporte coherente con registros,CP-10,Documental
+RF-11,Auditoría,Funcional,Registrar usuario fecha y acción sensible,CP-11,Documental
+RF-12,Operación offline y sincronización,Funcional,Sin pérdida ni duplicación tras reconexión,CP-12,Prueba práctica pendiente/ parcial
+RNF-01,Seguridad y privacidad,No funcional,Roles y auditoría aplicados,Revisión de permisos y bitácora,Documental
+RNF-02,Usabilidad,No funcional,4/5 operadores completan tarea sin ayuda,Prueba con usuarios,Documental
+RNF-03,Rendimiento,No funcional,95% consultas en máximo 3 segundos,Medición de tiempos,Prueba práctica pendiente/ parcial
+RNF-04,Sincronización,No funcional,Sincronizar en 15 minutos sin pérdida/duplicación,Prueba offline/online,Prueba práctica pendiente/ parcial
