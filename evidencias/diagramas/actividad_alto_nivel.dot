@@ -1,0 +1,14 @@
+digraph Actividad {
+  rankdir=TB; graph [label="Actividad general: gestión de lotes", labelloc=t, fontsize=18];
+  node [shape=box, style="rounded,filled", fillcolor="#eef5ff", color="#315b86", fontname="Arial"];
+  start [label="Inicio", shape=oval, fillcolor="#d9f2e6"];
+  auth [label="Iniciar sesión"];
+  role [label="Validar permisos", shape=diamond, fillcolor="#fff2cc"];
+  lot [label="Registrar / actualizar lote"];
+  move [label="Registrar movimiento y stock"];
+  audit [label="Guardar historial y auditoría"];
+  report [label="Consultar trazabilidad o reporte"];
+  end [label="Fin", shape=oval, fillcolor="#d9f2e6"];
+  start -> auth -> role; role -> lot [label="Autorizado"]; role -> end [label="No autorizado"];
+  lot -> move -> audit -> report -> end;
+}
