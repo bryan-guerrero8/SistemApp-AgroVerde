@@ -1,0 +1,13 @@
+digraph Contexto {
+  rankdir=LR; graph [label="SistemApp – AgroVerde S.A.C. | Diagrama de contexto", labelloc=t, fontsize=18];
+  node [shape=box, style="rounded,filled", fillcolor="#eef5ff", color="#315b86", fontname="Arial"];
+  usuario [label="Operadores de almacén\ny supervisores"];
+  gerencia [label="Gerencia /\nresponsables de exportación"];
+  sistema [label="SistemApp\nInventario y trazabilidad", shape=ellipse, fillcolor="#d9f2e6", penwidth=2];
+  externos [label="Servicios externos\n(si se confirman) ", style="rounded,dashed"];
+  usuario -> sistema [label="Lotes, movimientos, consultas"];
+  sistema -> usuario [label="Stock, historial, alertas"];
+  gerencia -> sistema [label="Pedidos y consultas de reportes"];
+  sistema -> gerencia [label="Reportes operativos e indicadores"];
+  sistema -> externos [label="Intercambio sujeto a validación", style=dashed];
+}
