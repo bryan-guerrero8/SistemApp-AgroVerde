@@ -2,27 +2,24 @@
 
 Repositorio académico para la documentación del sistema de inventario y trazabilidad de lotes de AgroVerde S.A.C.
 
-## Objetivo
-Organizar los requisitos funcionales y no funcionales, la matriz de trazabilidad, los diagramas y las evidencias de verificación del proyecto.
+## Documentación disponible
+- [Informe de la guía del estudiante (Markdown)](informe/Informe_Guia_Estudiante_AgroVerde.md)
+- [Especificación breve SRS](requisitos/SRS_Breve_SistemApp_AgroVerde.md)
+- [Matriz de trazabilidad CSV](requisitos/Matriz_Trazabilidad_AgroVerde.csv)
+- [Criterios y casos de prueba](pruebas/criterios_y_casos_de_prueba.md)
+- [Control de versiones y pendientes](VERSIONES.md)
 
-## Estructura de entrega
-- `informe/`: informe de la guía del estudiante en PDF y Word.
-- `requisitos/`: especificación breve de requisitos (SRS) y matriz de trazabilidad.
-- `evidencias/diagramas/`: diagramas de contexto y proceso exportados.
-- `fuentes/`: archivos editables de diagramas/modelado.
-- `pruebas/`: criterios de aceptación, casos de prueba y resultados.
+## Diagramas
+- [Diagrama de contexto SVG](evidencias/diagramas/contexto.svg)
+- [Mapa de procesos SVG](evidencias/diagramas/mapa_procesos.svg)
+- [Proceso crítico offline SVG](evidencias/diagramas/proceso_critico_offline.svg)
+- Fuentes editables Graphviz DOT en evidencias/diagramas/.
 
 ## Alcance resumido
-El sistema considera autenticación y roles, registro y actualización de lotes, historial de trazabilidad, movimientos de almacén, consulta de stock, asociación de lotes a pedidos de exportación, alertas, reportes, auditoría y sincronización de operaciones sin conexión.
+Autenticación y roles, registro/actualización de lotes, historial de trazabilidad, movimientos de almacén, consulta de stock, asociación de lotes a pedidos de exportación, alertas, reportes, auditoría y sincronización offline.
 
-## Requisitos no funcionales destacados
-- Seguridad y privacidad mediante roles y auditoría.
-- Usabilidad: al menos 4 de cada 5 operadores completan el registro sin ayuda.
-- Rendimiento: 95 % de consultas en un máximo de 3 segundos.
-- Sincronización: dentro de los 15 minutos posteriores a recuperar la conexión, sin pérdida ni duplicación.
+## Estado antes de entregar
+El informe Markdown, la SRS, la matriz y los diagramas SVG/DOT están publicados. **Aún faltan los archivos binarios finales PDF/DOCX/XLSX y las evidencias reales de pruebas/elicitación**; no se debe considerar la entrega cerrada hasta agregarlos y comprobar que el PDF final contenga los diagramas originales legibles. Los casos de prueba publicados son un plan, no resultados ejecutados.
 
-## Estado
-Este repositorio se está preparando para la entrega académica. Antes de presentarlo, incorporar los archivos binarios (PDF, DOCX, XLSX e imágenes) en las carpetas correspondientes y comprobar que el PDF final incluya los diagramas.
-
-## Trazabilidad y control de versiones
-Conservar los identificadores RF/RNF en los documentos, usar mensajes de commit descriptivos y crear una etiqueta de versión para la entrega revisada.
+## Trazabilidad
+Mantener IDs RF/RNF consistentes entre SRS, matriz, diagramas y pruebas. Usar mensajes de commit descriptivos y crear la etiqueta final después de revisar todos los archivos.
