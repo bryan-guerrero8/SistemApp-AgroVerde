@@ -1,15 +1,11 @@
-# Control de versiones y estado de entrega
+# Control de versiones
 
-## Estado documental
-- Estructura inicial, SRS resumido, matriz RF/RNF, fuentes de diagramas y plan de pruebas publicados.
-- Informe de guía en Markdown y diagramas SVG agregados para revisión.
-- Fecha: 18/10/2026.
+## Historial de artefactos
+El repositorio reúne la especificación breve de requisitos, la matriz de trazabilidad, las fuentes y exportaciones de diagramas, el informe en Markdown y el plan de pruebas.
 
-## Antes de etiquetar v1.0.0
-1. Revisar datos de curso y sección.
-2. Adjuntar PDF y DOCX finales basados en los documentos originales.
-3. Comparar los diagramas del informe original con los publicados aquí.
-4. Adjuntar evidencias reales de entrevistas, encuesta, decisiones y pruebas que solicite la guía.
-5. No marcar casos como aprobados sin evidencia.
+**Fecha de organización documental:** 18/10/2026.
 
-La versión final debe etiquetarse después de verificar todos los archivos.
+## Estado de validación
+Los casos de prueba documentados están pendientes de ejecución. Los requisitos de rendimiento, usabilidad y sincronización requieren validación práctica. Los diagramas describen el modelo propuesto y no representan por sí solos una implementación funcional.
+
+Los cambios realizados en los archivos pueden consultarse en el historial de commits de GitHub.
