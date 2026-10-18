@@ -1,0 +1,11 @@
+digraph MapaProcesos {
+  rankdir=TB; graph [label="Mapa de procesos – SistemApp AgroVerde", labelloc=t, fontsize=18];
+  node [shape=box, style="rounded,filled", fontname="Arial"];
+  direccion [label="Procesos estratégicos\nPlanificación y seguimiento", fillcolor="#e8eaf6"];
+  core [label="Procesos operativos", fillcolor="#d9f2e6"];
+  registro [label="Registro y actualización\nde lotes"];
+  almac [label="Movimientos y control\nde almacén"];
+  traz [label="Trazabilidad y asignación\na pedidos"];
+  soporte [label="Procesos de soporte\nUsuarios, auditoría, reportes y sincronización", fillcolor="#fff2cc"];
+  direccion -> core; core -> registro; registro -> almac -> traz; traz -> soporte;
+}
