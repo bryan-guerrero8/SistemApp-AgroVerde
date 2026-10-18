@@ -1,9 +1,5 @@
-# Informe final
+# Informe del proyecto
 
-Colocar aquí el PDF final de la guía del estudiante y su archivo Word editable. Verificar antes de la entrega que el PDF incluya los diagramas del documento fuente, las matrices, el análisis de resultados y las conclusiones.
+Esta carpeta contiene el informe de la guía del estudiante en formato Markdown.
 
-Archivos esperados:
-- `Tema1_GuerreroBryan.pdf`
-- `Tema1_GuerreroBryan.docx`
-
-No se incluyen aquí hasta que se hayan cargado y verificado los binarios originales.
+El documento desarrolla el objetivo, contexto y alcance del sistema, los requisitos funcionales y no funcionales, la trazabilidad, el análisis de resultados y las conclusiones.
